@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link href="index.css" rel="stylesheet" />
+
+    <title>Garden Restaurant</title>
+    <script src="../src/index.js"></script>
+  </head>
+  <!-- set homepage as default active page -->
+  <body onload="loadHTML('../dist/home.html','home')">
+    <!-- following codes based on reference -->
+    <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+    <div class="topnav" id="myTopnav">
+      <a
+        href="#"
+        id="home"
+        class="navitem active"
+        onclick="loadHTML('../dist/home.html','home')"
+      >
+        <i class="fa fa-fw fa-home mx-3"></i>Home</a
+      >
+      <a
+        href="#"
+        id="menu"
+        class="navitem"
+        onclick="loadHTML('../dist/menu.html','menu')"
+        ><i class="fa-solid fa-utensils mx-4"></i>Menu</a
+      >
+      <a
+        href="#"
+        id="contact"
+        class="navitem"
+        onclick="loadHTML('../dist/contact.html','contact')"
+        ><i class="fa fa-fw fa-envelope mx-3"></i>Contact</a
+      >
+      <!-- hide menu items when the screen too small and display menu button -->
+      <a href="#" class="icon" onclick="displayMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- dynamic display content based on menu item being clicked -->
+    <div id="content"></div>
+
+    <script src="main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

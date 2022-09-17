@@ -1,0 +1,4 @@
+npm init
+npm install webpack webpack-cli --save-dev
+npx webpack
+npx webpack --watch
