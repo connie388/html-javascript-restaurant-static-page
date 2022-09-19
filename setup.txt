@@ -1,4 +1,25 @@
-npm init
-npm install webpack webpack-cli --save-dev
-npx webpack
+Restaurant project
+==================
+
+Before to begin the project, need to install node (including npm) in computer 
+step 1) download node.js from https://nodejs.org/en/ choose the LTS version is fine
+step 2) click on it to install and just use default 
+
+step 3)
+Based on https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page, perform
+following steps
+open the terminal in window 
+>mkdir restaurant-project
+>cd restaurant-project
+>npm init
+>npm install webpack webpack-cli --save-dev
+>touch .gitignore   (later edit this file and add this -> node_modules in the file)
+
+step 4) mkdir dist, and create file index.html
+using template from https://getbootstrap.com/docs/5.2/getting-started/introduction/
+ 
+
+After the project done, 
+run following to build
+>npx webpack
 npx webpack --watch
