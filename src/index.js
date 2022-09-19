@@ -1,8 +1,14 @@
-function loadHTML(pageURL, id) {
+async function loadHTML(pageURL, id) {
   fetch(pageURL)
     .then((response) => response.text())
     .then((text) => (document.getElementById("content").innerHTML = text));
 
+  // or use following way to fetch the page
+  // const response = await fetch(pageURL);
+  // const contentDiv = document.getElementById("content");
+  // contentDiv.innerHTML = await response.text();
+
+  // change color to green if it is active page; otherwise, just navitem
   const collection = document.getElementsByClassName("navitem");
   for (let i = 0; i < collection.length; i++) {
     collection[i].className = "navitem";

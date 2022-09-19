@@ -1,25 +1,39 @@
 Restaurant project
 ==================
 
-Before to begin the project, need to install node (including npm) in computer 
-step 1) download node.js from https://nodejs.org/en/ choose the LTS version is fine
-step 2) click on it to install and just use default 
 
-step 3)
-Based on https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page, perform
-following steps
-open the terminal in window 
->mkdir restaurant-project
->cd restaurant-project
->npm init
->npm install webpack webpack-cli --save-dev
->touch .gitignore   (later edit this file and add this -> node_modules in the file)
+mkdir restaurant-project
+cd restaurant-project
+mkdir dist
+mkdir src
+cd dist
+touch index.html
+touch index.css
+cd ../src
+touch index.js
+cd ..
+code . (to open microsoft visual studio code)
 
-step 4) mkdir dist, and create file index.html
-using template from https://getbootstrap.com/docs/5.2/getting-started/introduction/
- 
+Some of the codes references:
+index.html template:
+https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
-After the project done, 
-run following to build
->npx webpack
-npx webpack --watch
+Menu bar reference: 
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+Takeout menu page, reference:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object
+
+Menu page, reference:
+https://getbootstrap.com/docs/4.0/components/collapse/
+https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+index.js reference:
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+research.html reference:
+https://www.w3schools.com/howto/howto_css_contact_section.asp
+
+overall screen design reference:
+https://www.w3schools.com/howto/howto_website_restaurant.asp
+some real restaurant website like japanese restaurant
