@@ -1,19 +1,6 @@
 Restaurant project
 ==================
 
-
-mkdir restaurant-project
-cd restaurant-project
-mkdir dist
-mkdir src
-cd dist
-touch index.html
-touch index.css
-cd ../src
-touch index.js
-cd ..
-code . (to open microsoft visual studio code)
-
 Some of the codes references:
 index.html template:
 https://getbootstrap.com/docs/5.2/getting-started/introduction/)

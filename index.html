@@ -19,10 +19,10 @@
     <link href="index.css" rel="stylesheet" />
 
     <title>Garden Restaurant</title>
-    <script src="../src/index.js"></script>
+    <script src="./src/index.js"></script>
   </head>
   <!-- set homepage as default active page -->
-  <body onload="loadHTML('../dist/home.html','home')">
+  <body onload="loadHTML('./src/home.html','home')">
     <!-- following codes based on reference -->
     <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
     <div class="topnav" id="myTopnav">
@@ -30,7 +30,7 @@
         href="#"
         id="home"
         class="navitem active"
-        onclick="loadHTML('../dist/home.html','home')"
+        onclick="loadHTML('./src/home.html','home')"
       >
         <i class="fa fa-fw fa-home mx-3"></i>Home</a
       >
@@ -38,14 +38,14 @@
         href="#"
         id="menu"
         class="navitem"
-        onclick="loadHTML('../dist/menu.html','menu')"
+        onclick="loadHTML('./src/menu.html','menu')"
         ><i class="fa-solid fa-utensils mx-4"></i>Menu</a
       >
       <a
         href="#"
         id="contact"
         class="navitem"
-        onclick="loadHTML('../dist/contact.html','contact')"
+        onclick="loadHTML('./src/contact.html','contact')"
         ><i class="fa fa-fw fa-envelope mx-3"></i>Contact</a
       >
       <!-- hide menu items when the screen too small and display menu button -->
